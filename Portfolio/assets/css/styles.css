@@ -1,0 +1,203 @@
+/* CSS Document Portfolio*/
+
+/*Allmänt*/
+* {
+  font-family: "Inter 18pt", sans-serif;
+  font-weight: 400;
+  color: rgb(49, 45, 45);
+}
+/*Rubriker och text*/
+h1 {
+  font-size: 2.84em;
+  font-family: "Playfair Display", sans-serif;
+}
+h2 {
+  font-size: 1.76em;
+  font-family: "Playfair Display", sans-serif;
+}
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 1.09em;
+  font-style: italic;
+}
+p {
+  font-size: 1.09em;
+}
+.title {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 80px;
+  width: 50%;
+
+}
+
+/* Navigation Bar */
+nav {
+  margin: 0 40px;
+  border-bottom: 1px solid #b0b0b0;
+  background-color: rgb(255, 255, 255);
+}
+.nav-item:hover {
+  color: red;
+
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+/*Kontakta mig knapp*/
+.button {
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #b0d4da;
+  border-radius: 20px;
+}
+/*hovringseffekt på Kontaktknapp*/
+.button:hover {
+  background-color: #94b3b8;
+  color: white;
+}
+
+/* Cards för skills och projekt*/
+.cards {
+  margin: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Gör kortet större vid hover*/
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*Footer*/
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  padding: 40px 20px;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute; /*Placering*/
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #b0d4da;
+  margin: 0 20px 30px 0;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%; /*Cirkelform*/
+  transition: all 0.5s ease;
+}
+/*Hovereffekt mörkare blå*/
+.footer-col .social-links a:hover {
+  background-color: #94b3b8;
+}
+
+
+/*CV*/
+main {
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+/*Kolumner för CV, Index och projekt*/
+.col {
+  margin: 20px 20px;
+  width: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/*Datorkunskaper (CV)*/
+ul { 
+  display: flex;
+  flex-direction: column; /* Vertikal lista */
+}
+
+li {
+  display: flex;
+  justify-content: space-between; /*utrymme mellan prickar och text*/
+  align-items: center;
+  list-style: none;
+  padding: 10px 0;
+}
+
+/* Contact Form */
+input[type="text"],
+select,
+textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Skicka knapp */
+input[type="submit"] {
+  background-color: #2babca;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* hovereffekt skicka knapp */
+input[type="submit"]:hover {
+  background-color: #458fa0;
+}

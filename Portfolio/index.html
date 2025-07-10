@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linnea Yu Hammarsten</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!--Custom styles-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+
+  <body>
+    <!---Navigation-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img
+              src="../assets/images/LYH.png"
+              alt="Linnea Yu Hammarsten Logo"
+              class="logo"
+              style="width: 300px"
+              >
+          </a>
+           <!---Meny-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarID"
+            aria-controls="navbarID"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul id="navbarID" class="collapse navbar-collapse navbar-nav ms-auto">
+            <li class="nav-item"><a href="cv.html" class="nav-link">CV</a></li>
+            <li class="nav-item">
+              <a href="projekt.html" class="nav-link">Projekt</a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutme.html" class="nav-link">Om mig</a>
+            </li>
+            <li>
+              <button
+                class="button button1"
+                onclick="location.href='contact.html'"
+              >
+                Kontakta mig
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!---Main-->
+    <main>
+      <!---Presentation-->
+      <div class="container mx-5 my-3">
+        <div class="row">
+          <div class="col-5 align-items-center">
+            <img
+            src="../assets/images/linnea.jpg"
+            alt="Linnea Yu Hammarsten"
+            class="mt-4 rounded-start-pill rounded-end-5"
+            style="width: 300px"
+            >
+          </div>
+          <div class="col-6">
+            <h1 class="text-right mt-5">Civilingenjörsstudent, Teknisk Design</h1>
+            <p class="text-right">Chalmers 2023-2028</p>
+            <p class="text-right mt-5">
+              "Jag är en kreativ person som alltid letar efter nya projekt, vare sig
+              det handlar om konst, musik eller diy-projekt."
+            </p>
+          </div>
+        </div>
+      </div>
+      <!---Skills Cards-->
+      <h2 class="title">Skills</h2>
+      <div class="cards">
+        <!---Första kort-->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/images/stammen.jpg"
+              class="card-img-top"
+              alt="stammen"
+            >
+            <div class="card-body">
+              <h5 class="card-title">CAD</h5>
+              <p class="card-text">Alias, Vred</p>
+            </div>
+          </div>
+        </div>
+        <!---Andra kort-->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/images/brushbasic.jpg"
+              class="card-img-top"
+              alt="brushbasic"
+            >
+            <div class="card-body">
+              <h5 class="card-title">Adobe</h5>
+              <p class="card-text">Photoshop, Illustrator, InDesign</p>
+            </div>
+          </div>
+        </div>
+        <!---Tredje kort-->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/images/Produkt.png"
+              class="card-img-top"
+              alt="Produktutvecklingsprocess"
+            >
+            <div class="card-body">
+              <h5 class="card-title">Produktutveckling</h5>
+              <p class="card-text">
+                designprocess, idégenerering, gruppdynamik
+              </p>
+            </div>
+          </div>
+        </div>
+        <!---Fjärde kort-->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/images/webb.jpg"
+              class="card-img-top"
+              alt="webb"
+            >
+            <div class="card-body">
+              <h5 class="card-title">Webbutveckling</h5>
+              <p class="card-text">HTML, CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!---Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <p>Följ mig på</p>
+            <div class="social-links">
+              <a href="#"><i class="bx bxl-facebook-circle bx-sm"></i></a>
+              <a href="#"><i class="bx bxl-instagram bx-sm"></i></a>
+              <a href="#"><i class="bx bxl-linkedin bx-sm"></i></a>
+            </div>
+            <p>&copy; 2025 Linnea Yu Hammarsten</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

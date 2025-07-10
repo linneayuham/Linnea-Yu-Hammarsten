@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Linnea Yu Hammarsten</title>
+       <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--Custom styles-->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+      </head>
+
+  <body>
+    <!---Navigation-->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img
+              src="../assets/images/LYH.png"
+              alt="Linnea Yu Hammarsten Logo"
+              class="logo"
+              style="width: 300px"
+              >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarID"
+            aria-controls="navbarID"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul id="navbarID" class="collapse navbar-collapse navbar-nav ms-auto">
+            <li class="nav-item"><a href="cv.html" class="nav-link">CV</a></li>
+            <li class="nav-item">
+              <a href="projekt.html" class="nav-link">Projekt</a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutme.html" class="nav-link">Om mig</a>
+            </li>
+            <li>
+              <button
+                class="button button1"
+                onclick="location.href='contact.html'"
+              >
+                Kontakta mig
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!---Main-->
+    <main>
+      <!---Contact form-->
+      <div class="row">
+        <div class="col-4 m-5">
+          <form action="contact.html">
+            <label for="fname">Namn</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Ditt namn"
+            >
+
+            <label for="lname">Epost</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Din epost"
+            >
+
+            <label for="subject">Meddelande</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Skriv här.."
+              style="height: 200px"
+            ></textarea>
+            <input type="submit" value="Skicka">
+          </form>
+        </div>
+        <div class="col-6 m-5">
+          <img
+            src="../assets/images/bee.jpg"
+            alt="Linnea Yu Hammarsten"
+            class="rounded-start-pill rounded-end-5"
+            style="width: 70%"
+          >
+        </div>
+      </div>
+    </main>
+    <!---Footer-->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <p>Följ mig på</p>
+            <div class="social-links">
+              <a href="#"><i class="bx bxl-facebook bx-sm"></i></a>
+              <a href="#"><i class="bx bxl-instagram bx-sm"></i></a>
+              <a href="#"><i class="bx bxl-linkedin bx-sm"></i></a>
+            </div>
+            <p>&copy; 2025 Linnea Yu Hammarsten</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
